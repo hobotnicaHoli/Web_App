@@ -1,0 +1,8 @@
+npm install bootstrap 
+npm install jquery
+node modules -> bootstrap -> dist -> js -> bootstrap.bundle.min.js (copy relative path) ->
+u angular.json deo scripts(pod navodnike, sa obrnutim crtama, obavezno izbrisati deo frontend/app/)
+node modules -> jquery -> dist -> jquery.min.js(copy relative path) -> u angular.json deo scripts(-||-)
+node modules -> bootstrap -> dist -> css -> bootstrap.min.css(copy relative path) -> u angular.json deo styles(-||-)
+tsc komanda npm install -g typescript
+typescript.json namestiti da je strict -> false

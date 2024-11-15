@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <!-- Responsive navbar-->
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container py-0">
+                <a class="navbar-brand" href="#!">Ordinacija BOSKO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link"  href="pacijent">Profil</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="pacijent.lekari">Lekari</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pacijenti.pregledi">Pregledi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Obavestenja</a></li>
+                        <li class="nav-item"><a class="nav-link" href="promenalozinke">Promena lozinke</a></li>
+                        <li class="nav-item"><button class="btn btn-info" (click)="odjava()">Odjava</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5 shadow rounded" style="background-color: rgb(227, 249, 255);">
+                
+                <div>
+                    <br>
+                    Sortiranje: 
+                    <span style="padding-left: 10px;">
+                    <select [(ngModel)]="pocemu" class="select rounded">
+                        <option value="ime">Ime</option>
+                        <option value="prezime">Prezime</option>
+                        <option value="specijalizacija">Specijalizacija</option>
+                        <option value="ogranak">Ogranak</option>
+                    </select>
+                </span>
+                    <span style="padding-left: 10px;">
+                    <select [(ngModel)]="kako" class="select rounded">
+                        <option value="opadajuce">Opadajuce</option>
+                        <option value="rastuce">Rastuce</option>
+                    </select>
+                </span>
+                
+                    <span style="padding-left: 20px; padding-top: 20px;"><button class="btn btn-info" (click)="sortiranje()">Sortiraj</button></span>
+                <div style="overflow-x:auto;">
+                <table class="table align-middle mb-0 bg-white table-hover">
+                    <thead class="bg-light">
+                      <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Specijalizacija</th>
+                        <th>Pristup stranici</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let l of lekari">
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                                src="{{l.profilna_slika}}"
+                                alt=""
+                                style="width: 100px; height: 100px"
+                                class="rounded-circle"
+                                />
+                            <div class="ms-3" style="text-align: center;">
+                              <p class="fw-bold mb-1">{{l.ime}}</p>
+                              <p class="text-muted mb-0">{{l.email}}</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="fw-normal mb-1 fw-bold">{{l.prezime}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{l.specijalizacija}}</p>
+                            <p class="text-muted mb-0">{{l.ogranak}}</p>
+                        </td>
+                        <td>
+                            <span style="padding-left: 40px;"><button class="btn btn-info" (click)="stranica(l)">Stranica</button></span>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+                <hr>
+                <div class="row " style="width: 80%; margin: 0 auto; float: none;">
+                    <div class="col-md-4 mb-3 ">
+                      <input type="text" class="rounded" [(ngModel)]="ime" placeholder="Ime:">
+                    </div>
+                    <div class="col-md-4 mb-3 ">
+                      <input type="text" class="rounded" [(ngModel)]="prezime" placeholder="Prezime:">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <input type="text" class="rounded" [(ngModel)]="specijalizacija" placeholder="Specijalizacija:">
+                    </div>
+    
+    
+                  </div>
+                  <div class="row" style="margin: 0 auto; float: none; width: 20%;">
+                    <div class="margin:0 auto;">
+                      <button class="btn btn-info"  (click)="pretraga()" >Pretraga</button>
+                    </div>
+                  </div>
+<br>
+                    
+                </div>
+
+            </div>
+            <!-- Call to Action-->
+            
+            
+        </div>
+        <!-- Footer-->
+        <footer class="py-3 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Ordinacija BOSKO 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

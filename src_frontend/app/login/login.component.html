@@ -1,0 +1,96 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>login-form - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+    body {
+  margin: 0;
+  padding: 0;
+  background-color: #17a2b8;
+  height: 100vh;
+}
+#login .container #login-row #login-column #login-box {
+  margin-top: 20px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: 50px;
+}    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'https://bootsnipp.com');
+        });
+    </script>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light  navbar-laravel">
+    <div class="container px-5 py-0">
+    <a class="navbar-brand" href="">Ordinacija BOSKO</a>
+
+
+    <div class="btn-container">
+        <button class="btn btn-info" (click)="registracija()">Registracija</button>
+    </div>
+    </div>
+</nav>
+<body>
+    <body>
+    <div id="login">
+        <br>
+        <br>
+        <h1 class="text-center text-white pt-5">Prijava</h1>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-6">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info"></h3>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Korisnicko ime:</label><br>
+                                <input type="text" name="username" id="username" class="form-control" [(ngModel)]="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Lozinka:</label><br>
+                                <input type="password" name="password" id="password" class="form-control" [(ngModel)]="password">
+                            </div>
+                            <div class="form-group">     
+                                <label class="text-info"><span style="padding-left: 130px;">Lekar </span> <span><input type="radio" [(ngModel)]="tip" value="lekar" name="tip"></span></label>
+                                <label class="text-info"><span style="padding-left: 50px;">Pacijent </span> <span><input type="radio" [(ngModel)]="tip" value="pacijent" name="tip"></span></label><br>
+                                <br>
+                                <input type="submit" name="submit" class="btn btn-info" style="padding-left: 32px; padding-right: 32px;" value="Prijava" (click)="login()">
+                              <span style="font-size: 15px; color: red; padding-left: 10px;">{{error}}</span>
+                            </div>
+                                
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<footer class="py-3 bg-dark">
+    <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Ordinacija BOSKO 2023</p></div>
+</footer>
+	<script type="text/javascript">
+		</script>
+</body>

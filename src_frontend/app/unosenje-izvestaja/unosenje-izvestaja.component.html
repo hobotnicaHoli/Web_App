@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <!-- Responsive navbar-->
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container py-0">
+                <a class="navbar-brand" href="">Ordinacija BOSKO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </header>
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+
+            <!-- Call to Action-->
+            <div class="text-white row gx-4 gx-lg-5 my-5 py-4 text-center div-with-bg" style="background-color: #90bb3b;">
+                <div class="card-body " >
+                    <div class="container ">
+                        <h1 >Unosenje izvestaja: </h1>
+                          <hr>
+                        
+                          <!-- left column -->
+
+                          
+                          <!-- edit form column -->
+                          <div class=" align-items-center" style="bottom: 0; margin-left: 20%; margin-right: 20%;">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label class=" control-label">Datum:</label>
+                                    <div class="">
+                                      <output class="form-control" type="text" value="{{datum}}"></output>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class=" control-label">Vreme:</label>
+                                    <div class="">
+                                      <output class="form-control" type="text" value="{{vreme}}"></output>
+                                    </div>
+                                  </div>
+                              <div class="form-group">
+                                <label class=" control-label">Lekar:</label>
+                                <div class="">
+                                  <output class="form-control" type="text" value="{{lekar}}"></output>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label">Specijalizacija:</label>
+                                <div class="">
+                                  <output class="form-control" type="text" value="{{specijalizacija}}" ></output>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class=" control-label">Razlog:</label>
+                                <div class="">
+                                  <input class="form-control" type="text" name="razlog" [(ngModel)]="razlog">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class=" control-label">Dijagnoza:</label>
+                                <div class="">
+                                  <input class="form-control" type="text" name="dijagnoza" [(ngModel)]="dijagnoza">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class=" control-label">Terapija:</label>
+                                <div class="">
+                                  <input class="form-control" type="text" name="terapija" [(ngModel)]="terapija">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class=" control-label">Datum narednog:</label>
+                                <div class="">
+                                  <input class="form-control" type="date" name="datum_narednog" [(ngModel)]="datum_narednog">
+                                </div>
+                              </div>
+                              
+                              <div class="form-group">
+                                <div class="col-lg-8 py-5">
+                                    <button type="button" class="btn btn-light" (click)="unosenje()">Unesi izvestaj</button>
+                                </div>
+                              </div>
+                              <br>
+                              <br>
+                              <br>
+                              {{poruka}}
+                            </form>
+                          </div>
+                      
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Content Row-->
+            
+        </div>
+        <!-- Footer-->
+        <footer class="py-3 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Ordinacija BOSKO 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

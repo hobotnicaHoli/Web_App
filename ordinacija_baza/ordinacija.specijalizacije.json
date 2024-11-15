@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "65031a5b5f32ce02083cadfc"
+  },
+  "naziv": "hirurgija"
+},
+{
+  "_id": {
+    "$oid": "65031acd5f32ce02083cae01"
+  },
+  "naziv": "pulmologija"
+},
+{
+  "_id": {
+    "$oid": "65031ad95f32ce02083cae02"
+  },
+  "naziv": "pedijatrija"
+},
+{
+  "_id": {
+    "$oid": "65031ae45f32ce02083cae03"
+  },
+  "naziv": "kardiologija"
+},
+{
+  "_id": {
+    "$oid": "65031aef5f32ce02083cae04"
+  },
+  "naziv": "oftalmologija"
+},
+{
+  "_id": {
+    "$oid": "65031b025f32ce02083cae05"
+  },
+  "naziv": "ORL"
+},
+{
+  "_id": {
+    "$oid": "65031b135f32ce02083cae06"
+  },
+  "naziv": "ortopedija"
+},
+{
+  "_id": {
+    "$oid": "6503217fc54a19240064fe1e"
+  },
+  "naziv": "endokrinologija"
+}]

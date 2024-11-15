@@ -1,0 +1,193 @@
+
+
+<body>
+    <!-- Responsive navbar-->
+    <header>
+      <nav class="navbar  navbar-expand-lg  navbar-dark bg-dark">
+          <div class="container px-5 py-0">
+              <a class="navbar-brand" href="">Ordinacija BOSKO</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item" *ngIf="!ulogovan"><a class="btn tabela text-white"  href="login">Prijava</a></li>
+                      <li class="nav-item" *ngIf="ulogovan"><a class="btn tabela text-white"  href={{stranica}}>Pocetna</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
+    <!-- Page Content-->
+
+    <div class="container px-4 px-lg-5">
+        <!-- Heading Row-->
+        <div class="row gx-4 gx-lg-5  my-5">
+            <div class="col-lg-7">
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+                      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="/assets/med1.jpg" style="width:250px;height:510px" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/med2.jpg" style="width:250px;height:510px" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/doktori.jpg" style="width:250px;height:510px" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/opperacija.jpg" style="width:250px;height:510px" alt="Fourth slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/hall.jpg" style="width:250px;height:510px" alt="Fifth slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="/assets/pacijent.jpg" style="width:250px;height:510px" alt="Sixth slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </div>
+                  <br>
+                <h1 class="font-weight-light fs-2 font-family:georgia ">Vizija, misija i vrednosti</h1>
+                <hr>
+                <p style="text-align: center; color: #54B4D3; font-size: x-large; font-weight: bold">Vizija </p>
+                <p style="text-align: center;">Omogućiti dostupnost vrhunske usluge i biti izbor od poverenja za naše korisnike, uz pružanje najboljeg korisničkog iskustva.</p>
+                <p style="text-align: center; color: #54B4D3; font-size: x-large; font-weight: bold;">Misija </p>
+                <p style="text-align: center;">Stremimo izvrsnosti u pružanju sveobuhvatne medicinske nege radi postizanja vrhunskog lečenja i visokog zadovoljstva pacijenata.</p>
+                <p style="text-align: center; color: #54B4D3; font-size: x-large; font-weight: bold;">Vrednosti </p>
+                <p style="text-align: center;">Timski rad, Poverenje, Strucnost, Posvecenost, Pouzdanost </p>
+            </div>
+            <div class="col-lg-5 shadow p-3 mb-5 bg-white rounded">
+                <h1 class="font-weight-light text fs-1 fw-bold">Specijalisticka Internisticka ordinacija</h1>
+                <br>
+                <br>
+                <p class=" lh-base">Obavlja preglede iz velikog broja oblasti medicine, poput kardiologije, endokrinologije, gastroenterologije, pulmologije, urologije... <br><br>
+                    Od svog nastanka Ordinacija BOSKO teži da, uz najrespektabilnije stručnjake i najsavremeniju opremu, svojim pacijentima pruži najviši nivo zdravstvene usluge. Ordinacija BOSKO konstantno ulaže u edukaciju lekara i medicinskog osoblja,
+                     i predano radi na širenju znanja i iskustva u pogledu najsavremenijih i najuspešnijih metoda iz različitih grana medicine.</p>
+                    <br>
+                    <br>
+                    <p class=" lh-base" style="color: #54B4D3; font-size: x-large; font-weight: bold; text-align: center;">
+                - Bolnicko lecenje,
+                <br>
+                - Palijativno zbrinjavanje,
+                <br>
+                - Dnevna bolnica,
+                <br>
+                - Ambulantni pregledi,
+                <br>
+                - Laboratorija,
+                <br>
+                - Suportivna terapija,
+                <br>
+                - Davanje krvnih derivata,
+                <br>
+                - Dijagnostika
+                </p>
+            </div>
+        </div>
+        <!-- Call to Action-->
+        <div class="card text-black tabela my-5 py-4">
+            <div class="card-body "><p class="text-white m-0">
+                <h4 class="text-center">Nasi lekari</h4>
+                <hr>
+                <span style="text-align: left; font-size: medium;">
+                    Sortiranje: 
+                    <span style="padding-left: 10px;">
+                    <select [(ngModel)]="pocemu" class="select rounded">
+                        <option value="ime">Ime</option>
+                        <option value="prezime">Prezime</option>
+                        <option value="specijalizacija">Specijalizacija</option>
+                        <option value="ogranak">Ogranak</option>
+                    </select>
+                </span>
+                    <span style="padding-left: 10px;">
+                    <select [(ngModel)]="kako" class="select rounded">
+                        <option value="opadajuce">Opadajuce</option>
+                        <option value="rastuce">Rastuce</option>
+                    </select>
+                </span>
+                <span style="padding-left: 20px; padding-top: 20px;"><button class="btn btn-info" (click)="sortiranje()">Sortiraj</button></span>
+                </span>
+                <br>
+                <div style="overflow-x:auto;">
+                <table class="table align-middle mb-0 bg-white table-hover">
+                    <thead class="bg-light">
+                      <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Specijalizacija</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let l of lekari">
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                                src="{{l.profilna_slika}}"
+                                alt=""
+                                style="width: 100px; height: 100px"
+                                class="rounded-circle"
+                                />
+                            <div class="ms-3" style="text-align: center;">
+                              <p class="fw-bold mb-1">{{l.ime}}</p>
+                              <p class="text-muted mb-0">{{l.email}}</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="fw-normal mb-1 fw-bold">{{l.prezime}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{l.specijalizacija}}</p>
+                            <p class="text-muted mb-0">{{l.ogranak}}</p>
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                </table>  
+              </div>  
+<hr>
+              <div class="row " style="width: 80%; margin: 0 auto; float: none;">
+                <div class="col-md-4 mb-3 ">
+                  <input type="text" class="rounded" [(ngModel)]="ime" placeholder="Ime:">
+                </div>
+                <div class="col-md-4 mb-3 ">
+                  <input type="text" class="rounded" [(ngModel)]="prezime" placeholder="Prezime:">
+                </div>
+                <div class="col-md-4 mb-3">
+                  <input type="text" class="rounded" [(ngModel)]="specijalizacija" placeholder="Specijalizacija:">
+                </div>
+
+
+              </div>
+              <div class="row" style="margin: 0 auto; float: none; width: 20%;">
+                <div class="margin:0 auto;">
+                  <button class="btn dugme"  (click)="pretraga()" >Pretraga</button>
+                </div>
+              </div>
+
+            </div>
+        </div>
+        <!-- Content Row-->
+        
+    </div>
+    <footer class="py-3 bg-dark">
+      <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Ordinacija BOSKO 2023</p></div>
+  </footer>
+</body>
+    <!-- Footer-->
+    

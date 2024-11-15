@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <!-- Responsive navbar-->
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container py-0">
+                <a class="navbar-brand" href="">Ordinacija BOSKO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active " aria-current="page" href="menadzer">Korisnici</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dodavanjelekara">Dodavanje</a></li>
+                        <li class="nav-item"><a class="nav-link"   href="zahtevi">Zahtevi</a></li>
+                        <li class="nav-item"><button class="btn btn-warning" (click)="odjava()">Odjava</button></li>
+                        <li class="nav-item"><a class="nav-link" href="promenalozinkemenadzer">Promena lozinke</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+
+            <!-- Call to Action-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5  shadow rounded" style="background-color: rgb(246, 250, 232);">
+                <div>
+                    
+                <h3 class="text-center text-black">Pacijenti</h3>
+                <div style="overflow-x:auto;">
+                <table class="table align-middle mb-0 bg-white table-hover">
+                    <thead class="bg-light">
+                      <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Kontakt</th>
+                        <th>Adresa</th>
+                        <th>Azuriranje</th>
+                        <th>Brisanje</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let p of pacijenti">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img
+                                    src="{{p.profilna_slika}}"
+                                    alt=""
+                                    style="width: 100px; height: 100px"
+                                    class="rounded-circle"
+                                    />
+                                <div class="ms-3" style="text-align: center;">
+                                  <p class="fw-bold mb-1">{{p.ime}}</p>
+                                  <p class="text-muted mb-0">{{p.email}}</p>
+                                </div>
+                              </div>
+                        </td>
+                        <td>
+                                <p class="mb-1 fw-bold">{{p.prezime}}</p>
+
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{p.kontakt}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{p.adresa}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">
+                                <button class="btn btn-warning" (click)="azurirajpacijenta(p)">Azuriraj</button>
+                            </p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">
+                                <button class="btn btn-warning" (click)="brisanje(p)">Obrisi</button>
+                            </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+                </div>
+                <hr>
+
+                
+                    
+                </div>
+
+            </div>
+            <!-- Content Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5  shadow rounded" style="background-color: rgb(246, 250, 232);">
+                <div>
+                    
+                <h3 class="text-center text-black">Lekari</h3>
+                <div style="overflow-x:auto;">
+                <table class="table align-middle mb-0 bg-white table-hover">
+                    <thead class="bg-light">
+                      <tr>
+                        <th>Ime</th>
+                        <th>Prezime</th>
+                        <th>Kontakt</th>
+                        <th>Adresa</th>
+                        <th>Azuriranje</th>
+                        <th>Brisanje</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let l of lekari">
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img
+                                    src="{{l.profilna_slika}}"
+                                    alt=""
+                                    style="width: 100px; height: 100px"
+                                    class="rounded-circle"
+                                    />
+                                <div class="ms-3" style="text-align: center;">
+                                  <p class="fw-bold mb-1">{{l.ime}}</p>
+                                  <p class="text-muted mb-0">{{l.email}}</p>
+                                </div>
+                              </div>
+                        </td>
+                        <td>
+                                <p class="fw-bold">{{l.prezime}}</p>
+
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{l.kontakt}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{l.adresa}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">
+                                <button class="btn btn-warning" (click)="azurirajlekara(l)">Azuriraj</button>
+                            </p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">
+                                <button class="btn btn-warning" (click)="brisanje(l)">Obrisi</button>
+                            </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+                </div>
+                <hr>
+
+                
+                    
+                </div>
+
+            </div>
+
+            
+            <!-- Content Row-->
+            
+        </div>
+        <!-- Footer-->
+        <footer class="py-3 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Ordinacija BOSKO 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

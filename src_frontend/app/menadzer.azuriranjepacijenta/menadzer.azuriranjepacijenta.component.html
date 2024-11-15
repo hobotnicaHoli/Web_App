@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <!-- Responsive navbar-->
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container py-0">
+                <a class="navbar-brand" href="">Ordinacija BOSKO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                </div>
+            </div>
+        </nav>
+      </header>
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5 bg-light shadow rounded">
+                
+                <div class="col-lg-5">
+                    <h2 style="color:gray; padding-left: 50px;">Osnovni podaci</h2>
+                    <p class=" lh-lg" style="color:#17a2b8; font-size: 18px; padding-left: 150px;">Ime: 
+                        <br>
+                        Prezime: 
+                        <br>
+                        Adresa:
+                        <br>
+                        Email adresa: 
+                        <br>
+                        Kontakt telefon:
+                    </p>
+                    
+                </div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light" hidden="true">O</h1>
+                    <p class=" lh-lg" style="color:black; font-size: 18px; margin-top: 60px; ">{{korisnik?.ime}}
+                        <br>
+                        {{korisnik?.prezime}}
+                        <br>
+                        {{korisnik?.adresa}}
+                        <br>
+                        {{korisnik?.email}}
+                        <br>
+                        {{korisnik?.kontakt}}
+                    </p>
+                    
+                </div>
+            </div>
+            <!-- Call to Action-->
+            <div class="text-white my-5 py-4 text-center div-with-bg" style="background-color: #f8aa61;">
+                <div class="card-body " >
+                    <div class="container bootstrap snippets bootdey">
+                        <h1 >Azuriranje podataka</h1>
+                          <hr>
+                        <div class="row">
+                          <!-- left column -->
+                          <div class="col-md-3">
+                            <div class="text-center">
+                              <img src="{{korisnik?.profilna_slika}}" class="avatar img-circle img-thumbnail" alt="avatar">
+                              <h6>Promena profilne slike</h6>
+                              {{mojaslika}}
+                              <label for="files" class="text-center btn btn-light">Prilozite fajl</label>
+                                    <input type="file" id="files" style="visibility: hidden;"
+                                        (change)="onFileSelected($event)" />
+                            </div>
+                          </div>
+                          
+                          <!-- edit form column -->
+                          <div class="col-md-9 personal-info">
+                            
+                            <form class="form-horizontal" role="form">
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label">Ime:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" name="ime" [(ngModel)]="ime">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label">Prezime:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" name="prezime" [(ngModel)]="prezime">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label">Adresa:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" name="adresa" [(ngModel)]="adresa">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label">Email:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" name="email" [(ngModel)]="email">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label">Kontakt:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" name="kontakt" [(ngModel)]="kontakt">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-lg-8 py-5">
+                                    <button type="button" class="btn btn-light" (click)="azurirajPodatke()">Azuriraj</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Row-->
+            
+        </div>
+        <!-- Footer-->
+        <footer class="py-3 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Ordinacija BOSKO 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

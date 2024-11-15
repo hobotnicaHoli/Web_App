@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <!-- Responsive navbar-->
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container py-0">
+                <a class="navbar-brand" href="">Ordinacija BOSKO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="pacijent">Profil</a></li>
+                        <li class="nav-item"><a class="nav-link"  href="pacijent.lekari">Lekari</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pacijenti.pregledi">Pregledi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="">Obavestenja</a></li>
+                        <li class="nav-item"><a class="nav-link" href="promenalozinke">Promena lozinke</a></li>
+                        <li class="nav-item"><button class="btn btn-info" (click)="odjava()">Odjava</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </header>
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-3 gx-lg-3 align-items-center my-5 bg-light shadow rounded" style="margin-left: 5%; margin-right: 5%;">
+              <h3 class="text-center" style="color: gray;">Osnovni podaci</h3>
+              <br>
+              <div style="overflow-x:auto;">
+                <table class="table align-middle mb-0 bg-white table-hover">
+
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                              <p class="fw-bold mb-1" style="color: rgb(71, 127, 161); font-size: 18px;">Ime:</p>
+                          </div>
+                        </td>
+                        <td>
+                            <p class=" mb-1" style="font-size: 18px; font-weight: bold;">{{korisnik?.ime}}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                              <p class="fw-bold mb-1" style="color: rgb(71, 127, 161); font-size: 18px;">Prezime:</p>
+                          </div>
+                        </td>
+                        <td>
+                            <p class=" mb-1" style="font-size: 18px; font-weight: bold;">{{korisnik?.prezime}}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                              <p class="fw-bold mb-1" style="color: rgb(71, 127, 161); font-size: 18px;">Adresa:</p>
+                          </div>
+                        </td>
+                        <td>
+                            <p class=" mb-1" style="font-size: 18px;">{{korisnik?.adresa}}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                              <p class="fw-bold mb-1" style="color: rgb(71, 127, 161); font-size: 18px;">Email adresa:</p>
+                          </div>
+                        </td>
+                        <td>
+                            <p class=" mb-1" style="font-size: 18px; font-weight: bold;">{{korisnik?.email}}</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center">
+                              <p class="fw-bold mb-1" style="color: rgb(71, 127, 161); font-size: 18px;">Kontakt telefon:</p>
+                          </div>
+                        </td>
+                        <td>
+                            <p class=" mb-1" style="font-size: 18px;">{{korisnik?.kontakt}}</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            <!-- Call to Action-->
+            <div class="text-white my-5 py-4 text-center div-with-bg" style="background-color:#17a2b8 ;">
+                <div class="card-body " >
+                    <div class="container bootstrap snippets bootdey">
+                        <h1 >Azuriranje podataka</h1>
+                          <hr>
+                        <div class="row">
+                          <!-- left column -->
+                          <div class="col-md-3">
+                            <div class="text-center">
+                              <img src="{{korisnik?.profilna_slika}}" class="avatar img-circle img-thumbnail" alt="avatar">
+                              <h6>Promena profilne slike</h6>
+                              {{mojaslika}}
+                              <label for="files" class="btn btn-light" style="width: 50%;">Prilozite fajl</label>
+                                    <input type="file" id="files" style="visibility: hidden;"
+                                        (change)="onFileSelected($event)" />
+                            </div>
+                          </div>
+                          
+                          <!-- edit form column -->
+                          <div class="col-md-9 personal-info">
+                            
+                            <form class="form-horizontal" role="form">
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label"></label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" name="ime" [(ngModel)]="ime" placeholder="Ime:">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label"></label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" name="prezime" [(ngModel)]="prezime" placeholder="Prezime:">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label"></label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" name="adresa" [(ngModel)]="adresa" placeholder="Adresa:">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label"></label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" name="email" [(ngModel)]="email" placeholder="Email:">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label"></label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" name="kontakt" [(ngModel)]="kontakt" placeholder="Kontakt:">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-lg-8 py-5">
+                                    <button type="button" class="btn btn-light" (click)="azurirajPodatke()">Azuriraj</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Row-->
+            
+        </div>
+        <!-- Footer-->
+        <footer class="py-3 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Ordinacija BOSKO 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

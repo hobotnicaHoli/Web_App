@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "65007a2a5f32ce02083cade8"
+  },
+  "cena": 50000,
+  "naziv": "Operacija plucne maramice",
+  "specijalizacija": "pulmologija",
+  "trajanje": 120
+}]

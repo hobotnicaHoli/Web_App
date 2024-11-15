@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <!-- Responsive navbar-->
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container py-0">
+                <a class="navbar-brand" href="">Ordinacija BOSKO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link "  href="lekar">Profil</a></li>
+                        <li class="nav-item"><a class="nav-link "   href="lekar.pregledi">Pregledi</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="lekar.razno">Razno</a></li>
+                        <li class="nav-item"><a class="nav-link" href="promenalozinke">Promena lozinke</a></li>
+                        <li class="nav-item"><button class="btn btn-warning" (click)="odjava()">Odjava</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </header>
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+
+            <!-- Call to Action-->
+            <div class="text-white gx-4 gx-lg-5 my-5 py-4 text-center div-with-bg" style="background-color:#90bb3b;">
+                <div class="card-body " >
+                    <div class="container">
+                        <h1 >Dodavanje nove vrste pregleda</h1>
+                          <hr>
+                        
+                          <!-- left column -->
+                          
+                          
+                          <!-- edit form column -->
+                          <div class=" align-items-center" style="bottom: 0; margin-left: 20%; margin-right: 20%;">
+                            <form class="form-horizontal" role="form">
+                              <div class="form-group">
+                                <label class="control-label">Naziv:</label>
+                                <div class="">
+                                  <input class="form-control" type="text" name="naziv" [(ngModel)]="naziv">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="control-label">Cena:</label>
+                                <div class="">
+                                  <input class="form-control" type="number" name="cena" [(ngModel)]="cena">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class=" control-label">Trajanje:</label>
+                                <div class="">
+                                  <input class="form-control" type="number" name="trajanje" [(ngModel)]="trajanje">
+                                </div>
+                              </div>
+                              
+                              <div class="form-group">
+                                <div class="py-5">
+                                    <button type="button" class="btn btn-light" (click)="slanjezahteva()">Posalji zahtev</button>
+                                </div>
+                              </div>
+                              <br>
+                              <br>
+                              <br>
+                            </form>
+                          </div>
+                      
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Content Row-->
+            <br>
+            <br>
+            <br>
+        </div>
+        <!-- Footer-->
+        <footer class="py-3 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Ordinacija BOSKO 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

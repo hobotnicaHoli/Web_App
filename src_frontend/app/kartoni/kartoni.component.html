@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <!-- Responsive navbar-->
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container py-0">
+                <a class="navbar-brand" href="">Ordinacija BOSKO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <!-- Page Content-->
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            
+            <!-- Call to Action-->
+            
+            <div class="row gx-4 gx-lg-5 align-items-center my-5 bg-light shadow rounded">
+                <div>
+                    
+                <h3 class="text-center text-black">Izvestaji (pacijent: {{pacijent?.ime}} {{pacijent?.prezime}})</h3>
+                <div style="overflow-x:auto;">
+                <table class="table align-middle mb-0 bg-white table-hover">
+                    <thead class="bg-light">
+                      <tr>
+                        <th>Datum</th>
+                        <th>Vreme</th>
+                        <th>Lekar</th>
+                        <th>Specijalizacija</th>
+                        <th>Razlog</th>
+                        <th>Dijagnoza</th>
+                        <th>Terapija</th>
+                        <th>Datum narednog</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let i of izvestaji">
+                        <td>
+                          <div class="d-flex align-items-center">
+                              <p class="fw-bold mb-1">{{i.datum}}</p>
+                          </div>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{i.vreme}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{i.lekar}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{i.specijalizacija}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{i.razlog}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{i.dijagnoza}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{i.terapija}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{i.datum_narednog}}</p>
+                        </td>
+
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+                <hr>
+
+                    
+                </div>
+
+            </div>
+            <!-- Content Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5 bg-light shadow rounded">
+                <div>
+                    
+                <h3 class="text-center text-black">Pregledi kojima se mogu uneti izvestaji: </h3>
+                <div style="overflow-x:auto;">
+                <table class="table align-middle mb-0 bg-white table-hover">
+                    <thead class="bg-light">
+                      <tr>
+                        <th>Naziv</th>
+                        <th>Datum</th>
+                        <th>Vreme</th>
+                        <th>Pacijent</th>
+                        <th>Unosenje izvestaja</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let z of zakazanipregledi">
+                        <td>
+                          <div class="d-flex align-items-center">
+                              <p class="fw-bold mb-1">{{z.naziv}}</p>
+                          </div>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{z.datum}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{z.vreme}}</p>
+                        </td>
+                        <td>
+                            <p class=" mb-1">{{z.pacijent}}</p>
+                        </td>
+                        <td>
+                            <button class="btn btn-warning" (click)="unesiizvestaj(z)">Unesi izvestaj</button>
+                        </td>
+
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+                <hr>
+
+                    
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <br>
+
+        </div>
+        <!-- Footer-->
+        <footer class="py-3 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Ordinacija BOSKO 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

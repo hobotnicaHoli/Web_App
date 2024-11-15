@@ -1,0 +1,378 @@
+[{
+  "_id": {
+    "$oid": "64df653b80c1dad990eb9de0"
+  },
+  "naziv": "Pregled kardiohirurga",
+  "cena": 6000,
+  "trajanje": 60,
+  "specijalizacija": "hirurgija"
+},
+{
+  "_id": {
+    "$oid": "64df653b80c1dad990eb9de1"
+  },
+  "naziv": "Specijalisticki pregled opsteg i abdominalnog hirurga",
+  "cena": 5000,
+  "trajanje": 60,
+  "specijalizacija": "hirurgija"
+},
+{
+  "_id": {
+    "$oid": "64fca1df38041ac538e8eee5"
+  },
+  "naziv": "Ultrazvuk abdomena",
+  "cena": 4500,
+  "trajanje": 45,
+  "specijalizacija": "hirurgija"
+},
+{
+  "_id": {
+    "$oid": "64fca1f538041ac538e8eee6"
+  },
+  "naziv": "Ugradnja pejsmejkera",
+  "cena": 130000,
+  "trajanje": 180,
+  "specijalizacija": "hirurgija"
+},
+{
+  "_id": {
+    "$oid": "64fca20138041ac538e8eee7"
+  },
+  "naziv": "Pregled aritmologa",
+  "cena": 4500,
+  "trajanje": 45,
+  "specijalizacija": "hirurgija"
+},
+{
+  "_id": {
+    "$oid": "64fca21538041ac538e8eee8"
+  },
+  "naziv": "Arteriografija",
+  "cena": 40000,
+  "trajanje": 120,
+  "specijalizacija": "hirurgija"
+},
+{
+  "_id": {
+    "$oid": "64fca22438041ac538e8eee9"
+  },
+  "naziv": "Pregled plasticnog hirurga",
+  "cena": 5000,
+  "trajanje": 45,
+  "specijalizacija": "hirurgija"
+},
+{
+  "_id": {
+    "$oid": "64fca23038041ac538e8eeea"
+  },
+  "naziv": "Pregled kod grudnog hirurga",
+  "cena": 4500,
+  "trajanje": 60,
+  "specijalizacija": "hirurgija"
+},
+{
+  "_id": {
+    "$oid": "64fca24638041ac538e8eeeb"
+  },
+  "naziv": "Pregled neurohirurga 1",
+  "cena": 7990,
+  "trajanje": 50,
+  "specijalizacija": "hirurgija"
+},
+{
+  "_id": {
+    "$oid": "64fca26338041ac538e8eeed"
+  },
+  "naziv": "Elektroencefalografija EEG snimanje sa izvestajem i misljenjem",
+  "cena": 8490,
+  "trajanje": 60,
+  "specijalizacija": "hirurgija"
+},
+{
+  "_id": {
+    "$oid": "64fca27038041ac538e8eeee"
+  },
+  "naziv": "Specijalisticki pregled pulmologa",
+  "cena": 4000,
+  "trajanje": 30,
+  "specijalizacija": "pulmologija"
+},
+{
+  "_id": {
+    "$oid": "64fca27d38041ac538e8eeef"
+  },
+  "naziv": "Spirometrija",
+  "cena": 2500,
+  "trajanje": 30,
+  "specijalizacija": "pulmologija"
+},
+{
+  "_id": {
+    "$oid": "64fca29438041ac538e8eef0"
+  },
+  "naziv": "Bronhodilatacioni test",
+  "cena": 3000,
+  "trajanje": 45,
+  "specijalizacija": "pulmologija"
+},
+{
+  "_id": {
+    "$oid": "64fca2a438041ac538e8eef1"
+  },
+  "naziv": "Pulmoloski paket",
+  "cena": 6000,
+  "trajanje": 90,
+  "specijalizacija": "pulmologija"
+},
+{
+  "_id": {
+    "$oid": "64fca2b238041ac538e8eef2"
+  },
+  "naziv": "RTG pluca",
+  "cena": 7190,
+  "trajanje": 60,
+  "specijalizacija": "pulmologija"
+},
+{
+  "_id": {
+    "$oid": "64fca2dc38041ac538e8eef3"
+  },
+  "naziv": "Bronhoskopija",
+  "cena": 25000,
+  "trajanje": 60,
+  "specijalizacija": "pulmologija"
+},
+{
+  "_id": {
+    "$oid": "64fca2ea38041ac538e8eef4"
+  },
+  "naziv": "Pregled logopeda",
+  "cena": 2200,
+  "trajanje": 45,
+  "specijalizacija": "pedijatrija"
+},
+{
+  "_id": {
+    "$oid": "64fca2f838041ac538e8eef5"
+  },
+  "naziv": "ORL paket",
+  "cena": 6000,
+  "trajanje": 60,
+  "specijalizacija": "pedijatrija"
+},
+{
+  "_id": {
+    "$oid": "64fca33638041ac538e8eef6"
+  },
+  "naziv": "Vadjenje krpelja",
+  "cena": 2500,
+  "trajanje": 15,
+  "specijalizacija": "pedijatrija"
+},
+{
+  "_id": {
+    "$oid": "64fcaad338041ac538e8eef9"
+  },
+  "naziv": "Dermatoloski paket",
+  "cena": 6000,
+  "trajanje": 60,
+  "specijalizacija": "pedijatrija"
+},
+{
+  "_id": {
+    "$oid": "64fcaade38041ac538e8eefa"
+  },
+  "naziv": "Odredjivanje dioptrije",
+  "cena": 1500,
+  "trajanje": 30,
+  "specijalizacija": "pedijatrija"
+},
+{
+  "_id": {
+    "$oid": "64fcaae738041ac538e8eefb"
+  },
+  "naziv": "Sistematski pregled",
+  "cena": 8000,
+  "trajanje": 60,
+  "specijalizacija": "pedijatrija"
+},
+{
+  "_id": {
+    "$oid": "64fcaaf138041ac538e8eefc"
+  },
+  "naziv": "Pregled lekara opste prakse",
+  "cena": 2500,
+  "trajanje": 20,
+  "specijalizacija": "pedijatrija"
+},
+{
+  "_id": {
+    "$oid": "64fcab7438041ac538e8eefd"
+  },
+  "naziv": "Holter EKG",
+  "cena": 3500,
+  "trajanje": 60,
+  "specijalizacija": "kardiologija"
+},
+{
+  "_id": {
+    "$oid": "64fcac0538041ac538e8eefe"
+  },
+  "naziv": "Holter pritiska",
+  "cena": 3500,
+  "trajanje": 45,
+  "specijalizacija": "kardiologija"
+},
+{
+  "_id": {
+    "$oid": "64fcac1738041ac538e8eeff"
+  },
+  "naziv": "Transezofagialni ultrazvuk",
+  "cena": 15000,
+  "trajanje": 60,
+  "specijalizacija": "kardiologija"
+},
+{
+  "_id": {
+    "$oid": "64fcac2438041ac538e8ef00"
+  },
+  "naziv": "Ultrazvuk srca sa kolor doplerom",
+  "cena": 3500,
+  "trajanje": 45,
+  "specijalizacija": "kardiologija"
+},
+{
+  "_id": {
+    "$oid": "64fcac2c38041ac538e8ef01"
+  },
+  "naziv": "Test opterecenja srca",
+  "cena": 7500,
+  "trajanje": 30,
+  "specijalizacija": "kardiologija"
+},
+{
+  "_id": {
+    "$oid": "64fcac3a38041ac538e8ef02"
+  },
+  "naziv": "Klinicki pregled oftalmologa",
+  "cena": 3500,
+  "trajanje": 45,
+  "specijalizacija": "oftalmologija"
+},
+{
+  "_id": {
+    "$oid": "64fcac4238041ac538e8ef03"
+  },
+  "naziv": "Kontrolni pregled",
+  "cena": 1750,
+  "trajanje": 30,
+  "specijalizacija": "oftalmologija"
+},
+{
+  "_id": {
+    "$oid": "64fcac5a38041ac538e8ef04"
+  },
+  "naziv": "Merenje ocnog pritiska",
+  "cena": 1000,
+  "trajanje": 30,
+  "specijalizacija": "oftalmologija"
+},
+{
+  "_id": {
+    "$oid": "64fcac6d38041ac538e8ef05"
+  },
+  "naziv": "Pregled otorinolaringologa",
+  "cena": 3590,
+  "trajanje": 30,
+  "specijalizacija": "ORL"
+},
+{
+  "_id": {
+    "$oid": "64fcac8738041ac538e8ef06"
+  },
+  "naziv": "Audiometrija",
+  "cena": 2500,
+  "trajanje": 20,
+  "specijalizacija": "ORL"
+},
+{
+  "_id": {
+    "$oid": "64fcaccb38041ac538e8ef07"
+  },
+  "naziv": "Timpanometrija",
+  "cena": 2500,
+  "trajanje": 20,
+  "specijalizacija": "ORL"
+},
+{
+  "_id": {
+    "$oid": "64fcacd538041ac538e8ef08"
+  },
+  "naziv": "Vestibulometrija",
+  "cena": 2500,
+  "trajanje": 20,
+  "specijalizacija": "ORL"
+},
+{
+  "_id": {
+    "$oid": "64fcace038041ac538e8ef09"
+  },
+  "naziv": "Alergoloske probe",
+  "cena": 3500,
+  "trajanje": 30,
+  "specijalizacija": "ORL"
+},
+{
+  "_id": {
+    "$oid": "64fcacf438041ac538e8ef0a"
+  },
+  "naziv": "Pregled ortopeda",
+  "cena": 6500,
+  "trajanje": 60,
+  "specijalizacija": "ortopedija"
+},
+{
+  "_id": {
+    "$oid": "64fcad0238041ac538e8ef0b"
+  },
+  "naziv": "Intraartikularna injekcija - blokada zglobova sa pregledom",
+  "cena": 8950,
+  "trajanje": 60,
+  "specijalizacija": "ortopedija"
+},
+{
+  "_id": {
+    "$oid": "64fcad0d38041ac538e8ef0c"
+  },
+  "naziv": "Skidanje bilo kog gipsa",
+  "cena": 2200,
+  "trajanje": 30,
+  "specijalizacija": "ortopedija"
+},
+{
+  "_id": {
+    "$oid": "64fcaf2538041ac538e8ef0e"
+  },
+  "naziv": "Postavljanje bandaz zavoja",
+  "cena": 2600,
+  "trajanje": 30,
+  "specijalizacija": "ortopedija"
+},
+{
+  "_id": {
+    "$oid": "65008e94e540ecfc763ee576"
+  },
+  "naziv": "Inhalacija",
+  "cena": 1000,
+  "trajanje": 30,
+  "specijalizacija": "pulmologija"
+},
+{
+  "_id": {
+    "$oid": "65033df719c2d7dcd77d7286"
+  },
+  "naziv": "Usivanje rana",
+  "cena": 1250,
+  "trajanje": 30,
+  "specijalizacija": "pedijatrija"
+}]
